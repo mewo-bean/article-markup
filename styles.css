@@ -1,5 +1,38 @@
-/* Тут пиши основные стили */
 
+nav {
+    margin-top: 9px;
+    margin-left: 38px;
+    background-color: #FAF9F8;
+    border-top: 1px solid #979797;
+    border-bottom:1px solid #979797;
+}
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+  }
+nav li {
+    float: left;
+  }
+nav li a {
+    font-family:LucidaGrande;
+    font-size:24px;
+    color:#333333;
+    text-align:left;
+    line-height:36px;
+    margin-left: 36px;
+}
+nav li a:hover {
+    text-decoration: underline;
+}
+.blog {
+    color:#d0021b;
+}
+.logo {
+    margin-left: 38px;
+    margin-top: 10px;
+    height: 64px;
+    width: 97px;
+}
 
 @media (max-width: 800px) {
 /* Тут пиши стили для мобилки.
