@@ -29,10 +29,12 @@ p {
 }
 
 nav {
+    cursor: pointer;
     margin-top: 9px;
     background-color: #FAF9F8;
     border-top: 1px solid #979797;
     border-bottom: 1px solid #979797;
+    display: block;
 }
 
 nav ul {
@@ -110,6 +112,10 @@ code {
     nav ul {
         text-align: center;
         padding: 10px 0;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
     }
 
     nav li {
