@@ -1,81 +1,123 @@
-/* Тут пиши основные стили */
 html, body {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
- h1 {
-     font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
-     font-size:42px;
-     color:rgba(0,0,0,0.84);
-     text-align:left;
-     line-height:44px;
-     margin: 55px 364px 10px 360px;
- }
+h1 {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    font-size: 42px;
+    color: rgba(0,0,0,0.84);
+    text-align: left;
+    line-height: 44px;
+    margin: 55px 25.4% 10px 25.4%;
+}
 
- h2 {
-     font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
-     font-size:34px;
-     color:rgba(0,0,0,0.84);
-     text-align:left;
-     line-height:39px;
-     margin: 55px 364px 10px 360px;
- }
+h2 {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+    font-size: 34px;
+    color: rgba(0,0,0,0.84);
+    text-align: left;
+    line-height: 39px;
+    margin: 55px 25.4% 10px 25.4%;
+}
 
- p {
-     font-size:21px;
-     color:rgba(0,0,0,0.84);
-     text-align:left;
-     line-height:33px;
-     margin: 0px 362px 0px 362px;
- }
+p {
+    font-size: 21px;
+    color: rgba(0,0,0,0.84);
+    text-align: left;
+    line-height: 33px;
+    margin: 0px 25.4% 20px 25.4%;
+}
 
 nav {
     margin-top: 9px;
-    margin-left: 38px;
     background-color: #FAF9F8;
     border-top: 1px solid #979797;
-    border-bottom:1px solid #979797;
+    border-bottom: 1px solid #979797;
 }
+
 nav ul {
     list-style-type: none;
     overflow: hidden;
-  }
+}
+
 nav li {
     float: left;
-  }
+}
+
 nav li a {
     font-family:LucidaGrande;
     font-size:24px;
     color:#333333;
     text-align:left;
     line-height:36px;
-    margin-left: 36px;
+    margin-right: 36px;
 }
+
 nav li a:hover {
     text-decoration: underline;
 }
+
 .blog {
-    color:#d0021b;
+    color: #d0021b;
 }
+
 .logo {
-    margin-left: 38px;
+    margin-left: 5%;
     margin-top: 10px;
     height: 64px;
-    width: 97px;
+    width: auto;
 }
 
 code {
      font-family: "Courier New", monospace;
      background: #ecefed;
- }
+}
 
 .image {
     margin: 43px 25.4% 37px 25.4%;
     width: 50%;
- }
+    display: block;
+}
 
 @media (max-width: 800px) {
-/* Тут пиши стили для мобилки.
-    Стили применятся только когда страничка будет ≤800px шириной
- */
+    h1, h2, p {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .image {
+        width: 90%;
+        margin: 30px 5%;
+    }
+
+    h1 {
+        font-size: 32px;
+        line-height: 36px;
+        margin-top: 30px;
+    }
+
+    h2 {
+        font-size: 26px;
+        line-height: 32px;
+        margin-top: 30px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    nav ul {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav li {
+        margin: 5px 10px;
+    }
+
+    nav li a {
+        font-size: 20px;
+        margin: 0;
+    }
 }
